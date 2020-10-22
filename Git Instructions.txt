@@ -1,0 +1,85 @@
+Terminal Commands 
+
+To change the directory
+cd directoryname
+
+To go back a directory
+cd..
+
+To make a directory  aka a folder
+mkdir directoryname   
+
+To initialize a repository   (aka a rep)
+git init
+
+
+To see the status of the git
+git status
+
+To add a file to the git
+git add filename.extension
+
+To commit the changes to the git
+git commit -m "This comment describes the changes in the commit"
+
+To link a git to github
+git remote add origin https://github.com/name/gitname.git
+git branch -M main
+git push -u origin main
+
+to push your main to github
+git push -u origin main
+
+To check out your git branches
+git branch
+
+To make a new git branch  - note no spaces in branchName
+                          - note using "" and none both worked
+git checkout -b branchName    
+git checkout -b "branchName"  
+
+To push a branch to github
+git push -u origin branchName
+
+How to switch to an existing branch
+git checkout branchName
+
+
+Overall how to add files to the repositiory (git)
+First make the file, and place it in your directory
+Do you want to add it to a branch or you main?
+
+Add it to main
+- git add filename.extension
+- git add "filename.extension"
+ 
+Confirm its status
+- git status
+
+Commit the file with a comment
+- git commit -m "This comment describes the changes in the commit"
+
+Push the main to github
+- git push -u origin main
+
+
+Adding the file to a branch, either use an existing branch or make a new one
+- git checkout -b "branchName"         --> to make a new branch
+- git checkout branchName              --> to switch to an existing branch
+
+Add it to the branch
+- git add filename.extension
+ 
+Confirm its status
+- git status
+
+Commit the file with a comment
+- git commit -m "This comment describes the changes in the commit"
+
+Push the main to github
+- git push -u origin branchName
+
+
+How to get all the changes back onto your computer
+- git pull origin "mainBranchName"
+- git pull
